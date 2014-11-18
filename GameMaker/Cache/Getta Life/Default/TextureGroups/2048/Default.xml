@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureGroup>
+  <texture scale="1">Default_0.png</texture>
+  <tpe x="2" y="2" tpage="Default_0" entry="4">sprite_full_npc_0.tpe</tpe>
+  <tpe x="2" y="138" tpage="Default_0" entry="0">sprite_npc_0.tpe</tpe>
+  <tpe x="2" y="190" tpage="Default_0" entry="1">sprite_pc_0.tpe</tpe>
+  <tpe x="58" y="2" tpage="Default_0" entry="3">sprite_wall_0.tpe</tpe>
+  <tpe x="94" y="2" tpage="Default_0" entry="2">sprite_sidewalk_0.tpe</tpe>
+</TextureGroup>
