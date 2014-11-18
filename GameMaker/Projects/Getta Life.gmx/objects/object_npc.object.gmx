@@ -89,24 +89,21 @@
             <kind>1</kind>
             <string>/// Checks if PC is nearby and that the action button is pressed
 
-a = 0
-a -= "20,16,12,8,4"
-a += "4,8,12,16,20"
 {
     // Checks if the pc is left of npc
-    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(object_pc.x+a,a,object_npc)){
+    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(object_pc.x+4,y,object_npc)){
         show_message("Hello.")
         }
     // Checks if the pc is right of npc
-    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(object_pc.x-a,a,object_npc)){
+    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(object_pc.x-4,y,object_npc)){
         show_message("Hello.")
         }
     // Checks if the pc if  the npc
-    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(a,object_pc.y-a,object_npc)){
+    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(x,object_pc.y-4,object_npc)){
         show_message("Hello.")
         }
     // Checks if the pc is under the npc
-    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(a,object_pc.y+a,object_npc)){
+    if(keyboard_check(vk_enter) &amp;&amp; place_meeting(x,object_pc.y+4,object_npc)){
         show_message("Hello.")
         }
 }
