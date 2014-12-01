@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// PC Movement via arrow keys
+            <string>/// pc movement via arrow keys
 {
     //Checks if PC can move to right and moves them
     if(keyboard_check(vk_right) &amp;&amp; place_free(x+4,y)) {

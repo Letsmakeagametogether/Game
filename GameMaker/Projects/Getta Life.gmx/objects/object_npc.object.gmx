@@ -55,6 +55,48 @@
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Moves npc randomly
+    npc_move = irandom (4) {
+    //Moves npc right
+        if(npc_move == 1 &amp;&amp; place_free (x+4,y)) {
+            x+=4
+            }
+    //Moves npc left
+        if(npc_move == 2 &amp;&amp; place_free (x-4,y)) {
+            x-=4
+            }
+    //Moves npc up
+        if(npc_move == 3 &amp;&amp; place_free (x,y-4)) {
+            y-=4
+            }
+    //Moves npc down
+        if(npc_move == 4 &amp;&amp; place_free (x,y+4)) {
+            y+=4
+            }
+        }
+
+/*      This is just a test.
+        It is too jittery this way.
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -90,45 +132,6 @@
           <argument>
             <kind>0</kind>
             <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Moves npc randomly
-    npc_move = irandom (5) {
-        //Moves npc right
-        if(npc_move == 1 &amp;&amp; place_free (x+4,y)) {
-            x+=4
-            }
-        //Moves npc left
-        if(npc_move == 2 &amp;&amp; place_free (x-4,y)) {
-            x-=4
-            }
-        //Moves npc up
-        if(npc_move == 3 &amp;&amp; place_free (x,y-4)) {
-            y-=4
-            }
-        //Moves npc down
-        if(npc_move == 4 &amp;&amp; place_free (x,y+4)) {
-            y+=4
-            }
-        }
-</string>
           </argument>
         </arguments>
       </action>
